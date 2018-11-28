@@ -1,2 +1,2 @@
 # fake-api-cucucmber-jvm
-A project demoing Rest Assured and Gson for API Testing in Cucucmber JVM
+A project demoing Rest Assured for API Testing in Cucucmber JVM
