@@ -62,7 +62,7 @@ public class FakeApiPostSteps {
         responseSupport.assertResponseBodyMatches(response, expResponse);
     }
 
-    @Then("^the response has more than (\\d+) entry$")
+    @Then("^the response has more than (\\d+) entr(?:y|ies)$")
     public void theResponseHasMoreThanEntry(int numberOfEntries) {
         responseSupport.assertNumberOfEntriesInResponseIsGreaterOrEqualTo(response, numberOfEntries);
     }
