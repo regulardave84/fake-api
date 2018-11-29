@@ -30,7 +30,7 @@ Feature: Fake API Posts
     Then the response returns a HTTP 201 status code
 #   Please note: usually you would check the item has been added using a GET call
 #   but as this is a fake API it simply returns a HTTP 200 and doesn't add anything!
-#  I have left the steps that you should use below:
+#   I have left the steps that you should use below:
 
 #    And I GET /post/101
 #    Then the response returns a HTTP 200 status code

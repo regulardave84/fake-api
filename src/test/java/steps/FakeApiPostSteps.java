@@ -16,6 +16,7 @@ public class FakeApiPostSteps {
     private static final String COMMON_PROPERTIES = "common.properties";
     private static final String FAKE_API_BASE_URI = "fake.api.base.uri";
     private static final String POSTS = "posts/";
+
     private RestSupport restSupport = new RestSupport();
     private ResponseSupport responseSupport = new ResponseSupport();
     private Response response;

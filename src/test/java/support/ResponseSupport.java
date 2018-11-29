@@ -1,20 +1,16 @@
 package support;
 
 import cucumber.api.DataTable;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Map;
 
 import static com.jayway.jsonassert.JsonAssert.collectionWithSize;
 import static com.jayway.jsonassert.JsonAssert.with;
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.Matchers.greaterThanOrEqualTo;
+import static org.hamcrest.Matchers.is;
 
 public class ResponseSupport {
-
     private static final String IS_BOOLEAN_REGEX = "^true|false$";
     private static final String IS_INTEGER_REGEX = "^-?(0|[1-9]\\d*)$";
     private static final String BODY_ROOT = "$";
