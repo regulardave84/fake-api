@@ -8,16 +8,16 @@ Feature: Fake API Posts
   Background:
     Given I am using the Fake API base URI
 
-    # I need an @After hook here delete the new post afterwards
+  # I need an @After hook here delete the new post afterwards
   Scenario: Add a new post
     When I request POST /posts with the following details:
       | $.userId | 4                                |
       | $.title  | Title of a new post              |
       | $.body   | This is the body of the new post |
     Then the response returns a HTTP 201 status code
-#   Please note: usually you would check the item has been added using a GET call
-#   but as this is a fake API it simply returns a HTTP 200 and doesn't add anything!
-#   I have left the steps that you should use below:
+# Please note: usually you would check the item has been added using a GET call
+# but as this is a fake API it simply returns a HTTP 200 and doesn't add anything!
+# I have left the steps that you should use below:
 
 #    And I GET /post/101
 #    Then the response returns a HTTP 200 status code
@@ -36,9 +36,9 @@ Feature: Fake API Posts
       | $.body   | Updated body of the new post |
     Then the response returns a HTTP 200 status code
 
-#   Please note: usually you would check the item has been updated using a GET call
-#   but as this is a fake API it simply returns a HTTP 200 and doesn't update anything!
-#   I have left the steps that you should use below:
+    # Please note: usually you would check the item has been updated using a GET call
+    # but as this is a fake API it simply returns a HTTP 200 and doesn't update anything!
+    # I have left the steps that you should use below:
 
 #    And I GET /post/1
 #    Then the response returns a HTTP 200 status code
@@ -68,9 +68,9 @@ Feature: Fake API Posts
   Scenario: Delete post by ID
     When I request DELETE /posts/1
     Then the response returns a HTTP 200 status code
-#   Please note: usually you would check the item has been deleted
-#   but as this is a fake API it simply returns a HTTP 200 and doesn't delete anything!
-#   I have left the steps that you should use below:
+    # Please note: usually you would check the item has been deleted
+    # but as this is a fake API it simply returns a HTTP 200 and doesn't delete anything!
+    # I have left the steps that you should use below:
 
 #    And I request GET /post/1
 #    Then the response returns a HTTP 404 status code
